@@ -43,11 +43,13 @@
   - HTML 버전
   - HTML5 표준
 
-### Head
+### Head - 웹사이트 기본 정보
 - meta : 웹사이트 관련 정보(검색엔진)
-- 
+- title : 웹사이트 제목
 
-### Body
+### Body - 웹사이트 컨텐츠
+- 웹사이트에 contents, structure... 표시하는 모든 태그
+
 
 ## HTML Contents
 
