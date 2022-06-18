@@ -86,6 +86,35 @@
 
 #### list(목록)
 
+- ul(Unordered List) : 순서없는 몰록
+- ol(Ordered List) : 순서있는 목록
+- li(List Item) : 목록 항목
+
+** 포함관계(Nested Sructure)
+
+- 태그안에 다른 태그들이 포함되는 것
+- 포함하는 요소
+  - 조상요소(Ancestor)
+  - 부모요소(Parent)
+- 포함되는 요소
+  - 자식요소(child)
+  - 자손요소(Desendant)
+```
+(1) <html>
+(2)   <body>
+(3)     <h1>내용 제목</h1>
+(4)     <p>
+(5)       단락내용<br>
+        </p>
+      </body>
+    <html>
+```
+(1)
+(2)
+(3)
+(4)
+(5)
+
 #### table(표)
 
 #### hyper link(하이퍼링크)
