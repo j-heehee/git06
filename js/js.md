@@ -137,15 +137,15 @@ if(결과값이 bool데이터인 식){
 
 if(bool1){
   bool1이 참일 때 실행코드
-} else if(bool2){
+} 
+else if(bool2){
   bool2가 참일 때 실행코드
 }
 
 
 if(bool){
   bool이 참일 때 실행코드
-} 
-else{
+} else{
   bool이 거짓일 때 실행코드
 }
 
@@ -163,14 +163,23 @@ else{
 ```
 if(a>10){}
 if(true){}
-if(a+1){} : 값이 숫자인 경우 0 : false, 그 외의 나머지 정수 : true 로 취급
+if(a+1){} : 값이 숫자인 경우, 0 : false / 그 외의 나머지 정수 : true 로 취급
 if(1){}
 ```
 
   - switch
 
 - 반복문
-  - for
+  - for : 결정된 반복횟수만큼 반복 실행 구문
+```
+for(초기값구문1;비교식구문2;수식구문3){
+
+}
+```
+```
+
+```
+
   - while
 
 ### 함수
