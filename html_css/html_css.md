@@ -139,11 +139,33 @@
 - a(anchor)
 - 기본 속성 : href(hypertext reference) : 연결할 위치(웹페이지)
 
+- 링크 이동 위치
+  - 외부링크
+  - 내부링크 : Bookmark
+
 ### Media
 
 #### image(이미지)
 
+- img(image)
+  - 빈 요소
+- 기본 속성
+  - src(source) : 이미지 파일 이름, 위치
+  - alt(alternative text) : 대체 텍스트 - 이미지가 화면에 표시되지 않을 때, screen reader
+```
+<img src="photo.jpg" alt="제주도 서귀포 바닷가 배경 사진">
+```
 #### video(영상)
+
+- video, source
+- 속성
+  - video 태그
+    - controls : 동영상 제어 버튼(on/off 형태)
+    
+  - source 태그
+    - src : 파일 이름, 경로
+    - type : 미디어 형식
+  - controls : 동영상 제어 버튼(on/off 형태)
 
 ## HTML Structure
 
