@@ -90,7 +90,7 @@
 - ol(Ordered List) : 순서있는 목록
 - li(List Item) : 목록 항목
 
-** 포함관계(Nested Sructure)
+\*\* 포함관계(Nested Sructure)
 
 - 태그안에 다른 태그들이 포함되는 것
 - 포함하는 요소
@@ -98,9 +98,10 @@
   - 부모요소(Parent)
 - 포함되는 요소
   - 자식요소(child)
-  - 자손요소(Desendant)
+  - 자손요소(Descendant)
 - 옆에 나란히 있는 요소
   - 형제요소(sibling)
+
 ```
 (1) <html>
 (2)   <body>
@@ -111,13 +112,19 @@
       </body>
     <html>
 ```
+
 (1) 조상 요소 | 기준 요소 | 조상 요소
 (2) 조상 요소 | 자식 요소 | 부모 요소
-(3)          | 자손 요소 | 형제 요소
+(3) | 자손 요소 | 형제 요소
 (4) 부모 요소 | 자손 요소 | 기준 요소
 (5) 기준 요소 | 자손 요소 | 자식 요소
 
 #### table(표)
+
+- table
+- thead(table head) : 표 상단 - 제목
+- tbody(table body) : 컨텐츠, 데이터
+- tr
 
 #### hyper link(하이퍼링크)
 
