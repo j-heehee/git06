@@ -113,16 +113,16 @@
     <html>
 ```
 
-(1) 조상 요소 | 기준 요소 | 조상 요소
-(2) 조상 요소 | 자식 요소 | 부모 요소
-(3) | 자손 요소 | 형제 요소
-(4) 부모 요소 | 자손 요소 | 기준 요소
-(5) 기준 요소 | 자손 요소 | 자식 요소
+(1) 조상 요소 | 기준 요소 | 조상 요소   
+(2) 조상 요소 | 자식 요소 | 부모 요소   
+(3) | 자손 요소 | 형제 요소   
+(4) 부모 요소 | 자손 요소 | 기준 요소   
+(5) 기준 요소 | 자손 요소 | 자식 요소   
 
 - Description List(설명 목록)
   - dl(desciption list)
-  - dt(desciption title)
-  - dd(desciption data)
+  - dt(desciption title) : 항목
+  - dd(desciption data) : 항목에 대한 설명
 
 #### table(표)
 
