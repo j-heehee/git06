@@ -159,16 +159,17 @@
 
 - video, source
 - 속성
-  - video 태그
-    - controls : 동영상 제어 버튼(on/off 형태)
-```
-<video controls>
-</video>
-```
+  - video 태그 : on/off 형태 attribute
+    - controls : 동영상 제어 버튼
+    - autoplay : 자동 재생
+    - muted : 음소거
+    - loop : 반복 재생
+
   - source 태그
     - src : 파일 이름, 경로
     - type : 미디어 형식
 
+- Youtube 영상
 
 ## HTML Structure
 
