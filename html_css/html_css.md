@@ -119,12 +119,20 @@
 (4) 부모 요소 | 자손 요소 | 기준 요소
 (5) 기준 요소 | 자손 요소 | 자식 요소
 
+- Description List(설명 목록)
+  - dl(desciption list)
+  - dt(desciption title)
+  - dd(desciption data)
+
 #### table(표)
 
 - table
 - thead(table head) : 표 상단 - 제목
 - tbody(table body) : 컨텐츠, 데이터
-- tr
+- tr(table row) : 행(줄)
+- th(table header) : 제목
+- td(table data) : 열(칸)
+- html tables generator를 이용하면 효율적임
 
 #### hyper link(하이퍼링크)
 
