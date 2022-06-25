@@ -131,19 +131,30 @@ a -= 1 => a--
     - else
 ```
 if(결과값이 bool데이터인 식){
-  결과값이 참일때 실행하는 코드
+  결과값이 참일 때 실행하는 코드
 }
 
 if(bool1){
-  bool1이 참일때 실행코드
+  bool1이 참일 때 실행코드
 } else if(bool2){
-  bool2가 참일때 실행코드
+  bool2가 참일 때 실행코드
 }
 
 if(bool){
-  bool이 참일때 실행코드
-} else{
-  bool이 거짓일때 실행코드
+  bool이 참일 때 실행코드
+} 
+else{
+  bool이 거짓일 때 실행코드
+}
+
+if(bool1){
+  bool1이 참일 때 실행코드
+}
+else if(bool2){
+  bool2가 참일 때 실행코드
+}
+else{
+  bool1, bool2이 모두 거짓일 때 실행코드
 }
 ```
 ```
