@@ -113,11 +113,11 @@
     <html>
 ```
 
-(1) 조상 요소 | 기준 요소 | 조상 요소   
-(2) 조상 요소 | 자식 요소 | 부모 요소   
-(3) 　　　　　| 자손 요소 | 형제 요소   
-(4) 부모 요소 | 자손 요소 | 기준 요소   
-(5) 기준 요소 | 자손 요소 | 자식 요소   
+(1) 조상 요소 | 기준 요소 | 조상 요소  
+(2) 조상 요소 | 자식 요소 | 부모 요소  
+(3) 　　　　　| 자손 요소 | 형제 요소  
+(4) 부모 요소 | 자손 요소 | 기준 요소  
+(5) 기준 요소 | 자손 요소 | 자식 요소
 
 - Description List(설명 목록)
   - dl(desciption list)
@@ -152,14 +152,18 @@
 - 기본 속성
   - src(source) : 이미지 파일 이름, 위치
   - alt(alternative text) : 대체 텍스트 - 이미지가 화면에 표시되지 않을 때, screen reader
+
 ```
 <img src="photo.jpg" alt="제주도 서귀포 바닷가 배경 사진">
 ```
+
 #### video(영상)
 
 - video, source
 - 속성
+
   - video 태그 : on/off 형태 attribute
+
     - controls : 동영상 제어 버튼
     - autoplay : 자동 재생
     - muted : 음소거
@@ -174,6 +178,19 @@
 ## HTML Structure
 
 ### Semantic
+
+- header
+  - logo, login ...
+- nav(igation)
+  - menu
+- section
+  - 본문 영역
+- article
+  - 본문 영역
+- aside
+  - 본문 영역, 부수적인 컨텐츠
+- footer
+  - 연락처, 주소, 회사 이름 ...
 
 ### Layout
 
