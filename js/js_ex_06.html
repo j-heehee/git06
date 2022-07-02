@@ -51,16 +51,36 @@
     console.log(obj);
 
     console.log(obj.type);
-    console.log(obj[type]);
+    console.log(obj['type']);
 
     /*
     0 : 'type'
 
     obj.0 [x] 숫자는 이렇게 작성 불가
     obj[0] 그래서 대괄호를 이용하여 작성
+
+    숫자가 아닌 문자를 작성할 때는 따옴표를 붙여야함
     */
-    // 배열데이터, 객체데이터는 부분 변경은 가능하나
-    // 전체 변경은 안됨
+
+    //클래스 선언    
+    //property
+    class myClass{
+      constructor(type, model, color){
+        this.type = type;
+        this.model = model;
+        this.color = color;
+      }
+    }
+
+    print(){
+      console.log(this.type, this.model, this.color);
+    }
+    //객체 데이터 생성
+    let heehee = new myClass('Benz', 'E-class','red');
+    console.log(heehee);
+
+    heehee.print();
+
   </script>
 </body>
 </html>
