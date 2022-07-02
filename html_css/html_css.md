@@ -231,4 +231,33 @@
 - /images/photo.jpg
 ```
 
+- 절대 경로
+
+  - 이미지를 표시하는 HTML 페이지가 기준이 아니고, 해당 서버가 기준
+  - 서버부터 주소(URL)를 사용하기 때문에 변동이 없음.
+
+```
+image.com
+
+[root(/)] - [html1] - home.html
+          - [html2] - [about] - about.html
+          - [images] - photo.jpg
+
+1) home.html
+- www.image.com/images/photo.jpg
+
+2) about.html
+- www.image.com/images/photo.jpg
+```
+
+### 강조 태그, 기타 태그
+
+- 텍스트 특정 부분 강조
+  - strong : 강한 강조
+  - em(phasize) : 일반 강조
+  - mark : html5 버전, block 강조
+- 텍스트를 표현할 때 부족한 태그를 보완하는 태그
+  - i(talic)
+  - b(old)
+
 # CSS
