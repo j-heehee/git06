@@ -194,4 +194,41 @@
 
 ### Layout
 
+- Block & Inline
+  - Block 요소
+    - 태그가 브라우저에 표시될때 각 태그 영역이 새 줄에서 표시
+    - 태그 영역이 부모요소에 전체 채워짐
+  - Inline 요소
+    - 태그가 브라우저에 표시될때 각 태그 영역이 같은 줄에서 표시
+    - 태그 영역이 콘텐트에 맞춰짐
+
+### container element
+
+- div(sion)
+- block
+- span
+- inline
+
+### 경로 지정 방식
+
+- 파일 위치, 인터넷 주소(URL)
+- 상대 경로
+  - 리소스 파일을 사용하는 HTML 파일 기준
+  - html 파일 위치에 따라 주소(URL) 변경
+  - root(/) 폴더를 기준으로 주소 적용 => root 상대 경로
+
+```
+[root(/)] - [html1] - home.html
+          - [html2] - [about] - about.html
+          - [images] - photo.jpg
+
+1) home.html -> photo.jpg
+- ../images/photo.jpg
+- /images/photo.jpg
+
+2) about.html -> photo.jpg
+- ../../images/photo.jpg
+- /images/photo.jpg
+```
+
 # CSS
