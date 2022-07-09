@@ -249,4 +249,34 @@ let error = [1,2,3,4,'a']
 #### Class
 - 객체 데이터를 만들 수 있게 하는 설계도
 
+### 추가 문법
+
+#### 변수 Scope
+- Scope
+  - Global Scope
+  - Fuction Scope
+  - Block Scope
+
+```
+<script>
+//Global scope
+let a = 1;
+
+function myFunction(){
+  //function scope
+  let b = 2;
+
+  for(statement){
+    //block scope(1)
+    let c = 3;
+  }
+}
+
+if(statement){
+  //block scope(2)
+  let d = 4;
+}
+</script>
+```
+
 ## JS 활용
