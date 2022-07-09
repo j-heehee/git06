@@ -284,4 +284,48 @@ h1 {
     - Tag/Element 이름 사용
     - class 이름 사용
     - id 이름 사용
+```
+<a href="https://www.naver.com" class="naver">네이버</a>
+<a href="https://www.daum.net" id="daum">다음</a>
 
+/* a 태그 2개 모두 red 적용 */
+a {
+  color:red;
+}
+
+/* a 태그 각각 다른 color 적용 */
+.naver {
+  color:green;
+}
+#daum{
+  color:blue;
+}
+```
+
+### id, class 이름의 특징
+- id 
+  - 같은 HTML 페이지에서 고유(유일)해야 함
+    - 프로그래밍 언어의 변수와 연결 가능성이 있음
+  - HTML 요소에 여러개의 id 이름 사용 불가능
+
+- class
+  - 같은 HTML 페이지에서 여러번 사용 가능함
+  - HTML 요소에 여러개의 class 이름 사용 가능
+
+```
+<p class="paragraph">단락1</p>
+<p class="paragraph">단락2</p>  (O)
+<p id="content">단락3</p>
+<p id="content">단락4</p>       (X)
+```
+
+### CSS 선택자 우선순위
+- cascading 규칙
+  - 동일한 대상에 여러 스타일이 적용될 때 제일 마지막에 적용된 스타일이 반영 
+- 선택자 우선순위
+  - 선택자 종류에 따라 css 적용 우선순위가 다르게 정의
+  - cascading 규칙에 따르지 않고 css를 적용할 때 사용
+- 우선순위 점수
+  - id : 100
+  - class : 10
+  - tag : 1
