@@ -250,7 +250,6 @@ image.com
 ```
 
 ## 강조 태그, 기타 태그
-
 - 텍스트 특정 부분 강조
   - strong : 강한 강조
   - em(phasize) : 일반 강조
@@ -260,3 +259,29 @@ image.com
   - b(old)
 
 # CSS
+- content styling
+  - text styling
+  - media styling
+
+- layout(structure styling)
+  - 가로배치(flexbox)
+
+## CSS Basic
+- CSS : Cascading Style Sheet
+```
+h1 {color:blue;font-size:20px;}
+
+h1 {
+  color:blue;
+  font-size:20px;
+}
+```
+
+## Selector(선택자)
+- 선택자로 HTML 요소를 선택
+- HTML 요소 선택 방법
+  - Simple Selector(단순 선택자)
+    - Tag/Element 이름 사용
+    - class 이름 사용
+    - id 이름 사용
+
