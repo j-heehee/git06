@@ -280,3 +280,31 @@ if(statement){
 ```
 
 ## JS 활용
+- 데이터 입출력
+- UI 효과
+
+### HTML DOM
+- DOM(Document Object Model) : HTML Element들을 객체화 시킨 모델
+- HTML DOM을 사용하여 HTML Element를 제어
+
+###DOM 접근 API
+- DOM API : DOM 객체 메소드
+```
+HTML4
+document.getElementById('id') : id로 DOM 접근
+document.getElementsByClassName('class') : class로 DOM 접근
+document.getElementsByTagName('tagname') : tag로 DOm 접근
+
+jQuery
+$('#id')
+$('.class')
+$('tag')
+
+HTML5
+document.querySelector('#id')
+document.querySelector('.class')
+document.querySelector('tag')
+
+document.querySelectorAll('.class')
+document.querySelectorAll('tag')
+```
