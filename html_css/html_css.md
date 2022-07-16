@@ -348,3 +348,88 @@ p{
 ```
 
 - 정렬 값 : left, center, right, justify(양쪽맞춤)
+
+- word-break : 단어 중간에 줄바꿈 property
+```
+p{
+  word-break:break-all;
+}
+```
+
+#### Text Decoration
+```
+h1{
+  text-decoration:underline;
+}
+
+
+h1{
+  text-decoration:line-through;
+}
+
+
+h1{
+  text-decoration:overline;
+}
+
+a{
+  text-decoration:none;
+}
+```
+
+#### Text Spacing
+```
+p{
+  text-indent:16px;
+}
+
+h2{
+  letter-spacing:5px;
+}
+
+p{
+  word-spacing:3px;
+}
+
+p{
+  white-space:nowrap;
+}
+```
+- line-height
+  - 텍스트 줄을 포함한 줄 높이
+  - 값 : px, 배수(소수점을 포함한 값)
+
+** 조상요소나 부모요소에 CSS 속성을 적용했을 때, 자식요소에도 적용되는 것을 상속
+  - HTML Element 중에 상속되지 않는 태그가 있음
+  - CSS 속성중에 상속되지 않는 속성이 있음
+
+#### Font Family
+- css 파일이 브라우저에서 랜더링되기 때문에 폰트 파일을 클라이언트 PC에서 찾음
+  - 다수의 클라이언트 PC에 설치될 만한 폰트를 선택(Web safe)
+- font-family 속성에 값으로 정해진 폰트 종류를 차례대로 찾음(Fallback)
+
+- 서버에서 폰트를 사용할 수 있게 하는 기능
+  - Web Font
+
+- 구글 폰트
+
+- 폰트 종류(저작권)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
