@@ -326,6 +326,25 @@ a {
   - 선택자 종류에 따라 css 적용 우선순위가 다르게 정의
   - cascading 규칙에 따르지 않고 css를 적용할 때 사용
 - 우선순위 점수
+  - inline : 1000
   - id : 100
   - class : 10
   - tag : 1
+
+### Test Styling
+
+#### Color
+```
+h1{
+  color:blue;
+}
+```
+
+#### Text alignment
+```
+p{
+  text-align:center;
+}
+```
+
+- 정렬 값 : left, center, right, justify(양쪽맞춤)
