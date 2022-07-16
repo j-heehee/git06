@@ -287,7 +287,7 @@ if(statement){
 - DOM(Document Object Model) : HTML Element들을 객체화 시킨 모델
 - HTML DOM을 사용하여 HTML Element를 제어
 
-###DOM 접근 API
+### DOM 접근 API
 - DOM API : DOM 객체 메소드
 ```
 HTML4
