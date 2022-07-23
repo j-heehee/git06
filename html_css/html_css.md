@@ -427,7 +427,6 @@ p{
 - font-family 속성에 값으로 정해진 폰트 종류를 차례대로 찾음(Fallback)
 
 - 서버에서 폰트를 사용할 수 있게 하는 기능
-
   - Web Font
 
 - 구글 폰트
@@ -453,3 +452,89 @@ p{
 - 굵기
 - normal/bold
 - 단위없는 100단위 숫자 값 사용
+
+#### Link Style
+- a 태그가 4가지 상태를 구분함
+- Link, visited, hover, active
+```
+<a href="#" class=link>naver</a>
+
+a:link{}
+.link:visited{}
+a:hover:{}
+a:active{}
+```
+
+### Layout styling
+- Element 영역
+  - Block, Inline Element
+- Element 영역 Styling
+  - Box Model
+- Element 배치
+  - 배치 지정
+    - 인접해있는 박스들의 관계
+    - 인접해있는 박스들 사이에 영향 
+  - 위치 지정 
+    - 박스의 위치를 단독으로 지정
+
+#### Box Model
+- Box Model 구성요소
+  - content(width/height), padding, border, margin
+
+##### width/height
+- block 요소
+  - width는 부모요소에 채워짐
+  - height는 contents 또는 자식요소에 맞춰짐
+- px
+  - 수치 값으로 크기 고정
+- %
+  - 부모 요소를 기준으로 일정 비율 크기만큼 지정
+  - height는 적용이 되지 않음
+- auto
+  - width/height 자동으로 크기 지정
+  - width/height의 원래 특성으로 적용(default)
+
+##### padding
+- 안쪽 여백
+```
+padding-top
+padding-right
+padding-bottom
+padding-left
+(** 방향 순서 : top을 기준으로 시계방향순)
+
+padding:10px 20px 30px 40px; → 4방향 각각 적용
+
+padding:10x 20px 30px; → 2번째값 좌우 공통 적용
+
+padding:10px 20px; → 1:위아래 공통/2:좌우 공통
+
+padding:10px; → 4방향 공통 적용
+```
+
+##### margin
+- margin 사용 방법은 padding과 동일
+- margin collapse(겹침/상쇄)
+  - 위아래에 인접한 박스의 margin이 상쇄되는 현상
+  - 두 여백중 큰 쪽 여백만 적용
+
+##### border
+- 굵기, 모양, 색
+```
+border:1px solid red;
+
+border-top:1px solid red;
+boder-right
+border-bottom
+boder-left
+```
+##### background
+- 배경색, 배경 이미지
+```
+background-color:red;
+
+background-image:url(이미지주소);
+background-repeat:no-repeat;
+background-position:10px 20px;
+background-attachment:fixed;
+```
