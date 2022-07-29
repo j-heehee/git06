@@ -552,7 +552,7 @@ background-attachment:fixed;
   - 배경 이미지 고정
   - fixed
 
-##### display
+#### display
 - 박스의 표시 속성을 변경해서 표시
 ```
 display:inline; /* block 요소가 inline요소의 특성으로 화면에 표시 */
