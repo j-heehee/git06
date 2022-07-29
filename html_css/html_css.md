@@ -529,7 +529,8 @@ border-bottom
 boder-left
 ```
 ##### background
-- 배경색, 배경 이미지
+- 배경색, 배경 이미지 표시
+- 배경은 box model 요소중 content, padding 영역까지 적용
 ```
 background-color:red;
 
@@ -538,3 +539,30 @@ background-repeat:no-repeat;
 background-position:10px 20px;
 background-attachment:fixed;
 ```
+- background-repeat
+  - repeat(default), repeat-x, repeat-y, no-repeat
+
+- background-position
+  - px
+  - left, center, right
+  - top, center, bottom
+  - 배경이미지의 위치 지정은 이미지 반복이 안될 때 적용
+
+- background-attachment
+  - 배경 이미지 고정
+  - fixed
+
+##### display
+- 박스의 표시 속성을 변경해서 표시
+```
+display:inline; /* block 요소가 inline요소의 특성으로 화면에 표시 */
+display:block; /* inline 요소가 block요소의 특성으로 화면에 표시 */
+display:inline-block; /* inline과 block의 특성을 모두 표시 : 나란히 표시, 박스모델 */
+```
+
+### layout 배치
+- float
+- flex
+- grid
+
+#### flexbox
