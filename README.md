@@ -50,6 +50,9 @@
   - sectionContent : camel case - js
   - SectionContent : pascal case - js의 Class
 
-  CSS 에서 SaSS라는 사이트가 있다고..? 먼지몰라
-  프론트엔드 로드맵
-  https://roadmap.sh/frontend
+## 동적/정적 용어
+- 정적(Static)
+  - 개발자가 직접 제어
+
+- 동적(Dynamic)
+  - 프로그래밍 언어가 제어
