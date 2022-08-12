@@ -465,6 +465,11 @@ a:hover:{}
 a:active{}
 ```
 
+### Media Contents styling
+- Image, Video
+  - Box Model 적용
+  - 위치 지정
+
 ### Layout styling
 - Element 영역
   - Block, Inline Element
@@ -480,6 +485,38 @@ a:active{}
 #### Box Model
 - Box Model 구성요소
   - content(width/height), padding, border, margin
+
+- inline 요소에 box model 적용
+  - width/height : 적용 안됨
+  - margin : 위아래 적용 안됨, 좌우 적용됨
+
+- 박스 크기 계산
+  - 박스 모델 구성요소(width/height + padding + border)의 크기 합 => 박스의 전체 크기
+Ex) width:300px, padding 4방향 모두 20px, border 4방향 1px, margin 4방향 10px => 박스의 실제 크기 : 300 + 40 + 2 = 342px
+
+- box-sizing 속성
+width의 기준을 content 또는 전체크기 중에 선택
+
+```
+div{
+  width:300px;
+  padding:20px;
+  border:1px solid black;
+  box-sizing:content-box; /* default */
+}
+
+300 + 40 + 2 = 342px /* width:300px => content 영역의 크기 */
+
+div{
+  width:300px;
+  padding:20px;
+  border:1px solid black;
+  box-sizing:border-box;
+}
+
+x + 40 + 2 = 300px /* width:300px => box 전체 크기 */ 
+                   /* content 영역의 크기 : x = 300 - 40 - 2 */
+```
 
 ##### width/height
 - block 요소
@@ -517,6 +554,7 @@ padding:10px; → 4방향 공통 적용
 - margin collapse(겹침/상쇄)
   - 위아래에 인접한 박스의 margin이 상쇄되는 현상
   - 두 여백중 큰 쪽 여백만 적용
+  - 좌우로 인접한 박스는 양쪽의 margin이 모두 적용되어 합쳐짐
 
 ##### border
 - 굵기, 모양, 색
@@ -597,7 +635,7 @@ display:inline-block; /* inline과 block의 특성을 모두 표시 : 나란히 
   - 문서에서 제외되지 않음
 
 - fixed
-  -browser를 기준으로 위치 지정
+  - browser를 기준으로 위치 지정
   - 요소의 일반 흐름에서 제외됨
   - 문서에서 제외됨
 
@@ -626,8 +664,7 @@ display:inline-block; /* inline과 block의 특성을 모두 표시 : 나란히 
 max-width:600px → 600px보다 작은 범위
 min-width:600px → 600px보다 큰 범위
 ```
-
-- 디바이스 스크린의 해상도는 가로 해상도를 기준
+디바이스 스크린의 해상도는 가로 해상도를 기준
 - PC Monitor
   - 1920 * 1080px : Full HD(1K)
   - 3840 * 2160px : 4K
@@ -646,3 +683,42 @@ min-width:600px → 600px보다 큰 범위
 - Breackpoint
   - 화면 크기에 따라 CSS가 다르게 적용되는 해상도 지점
   - 위 해상도 사례에서 1024, 720, 320 해상도가 breakpoint로 선택될 수 있음
+
+## color 값
+CSS에서 사용할 수 있는 color 값
+- red, blue, black
+- #a1eb35 : 16진수 값
+- rgb(0255, 0255, 0~255) : 10진수 값
+```
+컴퓨터에서 사용하는 진수:2진수
+2진수 데이터 : 01101110
+
+bit : 2진수 1자리 저장(표현)공간 / 컴퓨터 데이터의 최소 단위
+8bit = 1byte : 정보 표현의 최소단위 / 표현가능 개수 : 2^8 = 256
+
+RGB : Red, Green, Blue - 화면(screen) / 가산 혼합
+CMYK : Cyan, Magenta, Yellow, Black - 인쇄 / 감산 혼합
+
+Red(1byte), Green(1byte), Blue(1byte) => 24bit 트루컬러(2^24)
+
+16진수(0~9, a,b,c,d,e,f)
+2진수 4bit => 16진수 1bit
+24자리 2진수 => 6자리 16진수
+Ex) #1a3cff, #555555 => #555, #55ffdd => #5fd
+
+cf) #ffffff : white / #000000 : black / #555555, #f9f9f9 : grey
+
+10진수
+함수 사용 : rgb(red, green, blue)
+10진수 범위 : 0~255
+
+Ex) rgb(100, 230, 58)
+```
+
+## image format
+비트맵
+- 확대하면 깨짐
+- jpg(색표현), gif(투명배경, 애니메이션), png(투명배경)
+벡터
+- 확대해도 안깨짐
+- svg
