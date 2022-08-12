@@ -280,28 +280,35 @@ let error = [1,2,3,4,'a']
 
 - Scope
   - Global Scope
+   - 변수는 모든 범위에서 접근 가능
   - Fuction Scope
+    - 해당 함수 범위에서만 접근 가능
   - Block Scope
-
+    - 해당 블럭 범위에서만 접근 가능
 ```
 <script>
-//Global scope
+// Global Scope
 let a = 1;
+var _a = 1;
 
 function myFunction(){
-  //function scope
+  // function scope
   let b = 2;
+  var _b = 2;
 
   for(statement){
-    //block scope(1)
+    // block scope(1)
     let c = 3;
+    var _c = 3;
   }
 }
 
-if(statement){
-  //block scope(2)
+if(condition){
+  // block scope(2)
   let d = 4;
+  var _d = 4;
 }
+
 </script>
 ```
 
@@ -368,3 +375,12 @@ dom.addEventListener('click', function(){
   실행 코드 블럭
 });
 ```
+
+### CRUD
+#### 화면 효과(Effect)
+- 시각적 효과 => CSS 제어
+  - CSS 시작 상태와 끝 상태를 구현
+  - JS 상태 변화 제어
+- Effect 구현 밸런스
+  - 효과 표현 : CSS
+  - 효과 동적 제어 : JS
